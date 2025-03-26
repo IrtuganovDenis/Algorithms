@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Algorithms.MainWindow"
+        Title="Algorithms" Width="1920" Height="1080">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="200" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<StackPanel Grid.Column="0" Margin="10">
+			<TextBlock Text="Алгоритмы" FontSize="28" FontWeight="Bold" Margin="0,0,0,20"/>
+			<Expander Header="Алгоритмы на деревьях" IsExpanded="True">
+				<StackPanel Margin="10">
+					<Button Content="LCA (Lowest Common Ancestor)" Click="OnOpenLcaClick" Margin="0,5,0,5"/>
+				</StackPanel>
+			</Expander>
+			<Expander Header="Другие алгоритмы" IsExpanded="True">
+				<StackPanel Margin="10">
+					<Button Content="Бинарный поиск" Click="OnOpenBinarySearchClick" Margin="0,5,0,5"/>
+				</StackPanel>
+			</Expander>
+		</StackPanel>
+
+		<ContentControl x:Name="MainContent" Grid.Column="1" Margin="10"/>
+	</Grid>
+</Window>
