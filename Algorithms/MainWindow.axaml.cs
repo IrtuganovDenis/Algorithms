@@ -16,13 +16,13 @@ namespace Algorithms
 
         private void OnOpenLcaClick(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            OpenPage(new AlgorithmPage("LCA", this)); // Открываем страницу LCA
+            OpenPage(new AlgorithmPage("LCA", this));
         }
 
 
         private void OnOpenBinarySearchClick(object sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            OpenPage(new AlgorithmPage("Бинпоиск", this)); // Открываем страницу бинарного поиска
+            OpenPage(new AlgorithmPage("ГЃГЁГ­ГЇГ®ГЁГ±ГЄ", this));
         }
 
         public void OpenPage(UserControl page)
